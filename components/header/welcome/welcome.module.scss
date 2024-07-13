@@ -1,3 +1,15 @@
+@import "/styles/mixins/padding.scss";
+
+.container {
+    @include Padding;
+    height: 100vh;
+    background-image: url("/images/fundoWelcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .text {
     h1 {
     font-weight: bold;
